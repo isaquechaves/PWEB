@@ -1,0 +1,85 @@
+@media only screen
+and (min-device-width : 420px)
+and (max-device-width : 767px) {
+
+  h1{
+    margin: 40px;
+    color: rgb(32, 58, 129);
+  }  
+  h2{
+    margin: 40px;
+    color: rgb(32, 58, 129);
+  } 
+}
+
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1023px) {
+
+  h1{
+    margin: 40px;
+    color: orange;
+  }  
+  h2{
+    margin: 40px;
+    color: orange;
+  }  
+}
+
+
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1079px) {
+
+  h1{
+    margin: 40px;
+    color: rgb(223, 58, 93);
+  } 
+  h2{
+    margin: 40px;
+    color: rgb(223, 58, 93);
+  }  
+}
+
+@media only screen
+and (min-device-width : 1080px)
+and (max-device-width : 1365px) {
+
+  h1{
+    margin: 40px;
+    color: salmon;
+  }  
+  h2{
+    margin: 40px;
+    color: salmon;
+  }  
+}
+
+@media only screen
+and (min-device-width : 1366px)
+and (max-device-width : 1919px) {
+
+  h1{
+    margin: 40px;
+    color: darkblue;
+  }  
+  h2{
+    margin: 40px;
+    color: darkblue;
+  }  
+}
+
+@media only screen
+and (min-device-width : 1920px)
+and (min-device-height : 1920px) {
+
+  h1{
+    margin: 40px;
+    color: yellow;
+  }  
+  h2{
+    margin: 40px;
+    color: yellow;
+  }  
+}
