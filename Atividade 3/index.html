@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Arquitetura de Microsserviços</title>
+    <meta name="description"
+        content="Conheça os princípios por trás da arquitetura de microsserviços.">
+</head>
+
+
+
+<body>
+    <main>
+        <div class="text-content">
+            <h1>Arquitetura de Microsserviços</h1>
+            <section>
+                <h2>1. O que é?</h2>
+                <p>É uma arquitetura para o desenvolvimento de aplicações, os microsserviços podem ser vistos como obstantes a aplicações monolíticas, 
+                    ao contrario dessas aplicações o sistema é dividido em módulos independentes, cada parte tem sua própria responsabilidade para atender 
+                    a uma única necessidade, uma aplicação baseada em microsserviços pode ter chamada a diversos internos para compor uma única resposta.
+                </p>
+            </section>
+
+            <section>
+                <h2>Como funciona?</h2>
+                <p> Essa arquitetura comumente é composta por contêineres, eles são uma associação aos contêineres de um navio, 
+                    onde cada aplicação que roda em um contêiner tem o seu sistema isolado dos outros, elas dividem o mesmo hardware de uma máquina, que pode ser visto como a superfície de um navio, cada pedaço de CPU, memória e disco é separado para funcionar como um recurso para o sistema do contêiner.</p>
+                <p>As funções também podem ser utilizadas como um serviço que compõem ela, por exemplo, 
+                    funções HTTP para atender necessidades de integrações especificas, existem indenpentes de outros serviços e apenas para atender uma necessidade. </p>
+                
+            </section>
+
+            <section>
+                <h2>Usos e Vantagens</h2>
+                
+                <ul>
+                    <li>Facilita a migração de sites: <br>
+                        Com esta arquitetura facilmente a empresa consegue adotar a capacidade de lift-shift, 
+                        ou seja, facilita a substituição de um ambiente para o outro, tais como de uma nuvem para outra ou então de on-premises para cloud.
+                    </li>
+                    <li>Mídias: <br>
+                        Através desta arquitetura é possível utilizar um serviço gerenciado pela cloud ou uma storage personalizada 
+                        para o armazenamento de imagens e vídeos, dessa forma é possível gerenciar a escalabilidade dos recursos 
+                        associados ao armazenamento e provisionamento independentemente para este serviço, inclusive disponibilizando 
+                        os objetos em múltiplas regiões para assim diminuir a velocidade de acesso.
+                    </li>
+                </ul>
+                
+            </section>
+            <section>
+                <h2>Serviços Relacionados da Cloud</h2>
+                <ul style="list-style: inside;">
+                    <li>GCP
+                        <ul>
+                            <li> Google Kubernetes Engine: Ambiente de contêineres gerenciados pelo Kubernetes semi-gerenciado pela cloud,
+                            nesta solução o cliente ainda gerência os recursos de infra, pode ser visto como um PaaS e IaaS.
+                            </li>
+                            <li>Cloud Run: Recursos de computação escalonável para aplicativos em contêineres, também autogerenciável com menos preocupação 
+                                com a infra por trás, considerado um PaaS.
+                            </li>
+                            <li>Cloud Functions: Ambiente serverless para execução de funções sem a preocupação com a alocação de recursos de infra, 
+                                também é totalmente gerenciado pela Cloud, ou seja, um PaaS.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="referencias">
+                <h2>Referências</h2>
+                <ul>
+                    <li>GOOGLE, “What is microservice architecture” 
+                        Disponível em: https://cloud.google.com/learn/what-is-microservices-architecture?hl=pt-br 
+                        Acesso em: 28 fev. 2024.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
