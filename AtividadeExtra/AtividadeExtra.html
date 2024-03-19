@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade Extra</title>
-
-    <link rel="stylesheet"   href="AtividadeExtra.css">
-
-  </head>
-  <body>
-    <div class="pai">
-       <h1>Teste</h1>
-      <div class="filha">
-        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero molestiae ea dignissimos illum doloribus rem repellendus inventore est cumque, expedita quod nobis iste provident magni aut aliquid quia soluta numquam?</h2>
-      </div>
-    </div>
-  </body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Tecnologias e ferramentas</title>
+</head>
+<body>
+    <header>
+        <h1>Tecnologias e ferramentas que eu gosto</h1>
+    </header>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#spring-boot">Spring Boot</a></li>
+            <li><a href="#microservicos">Microsserviços</a></li>
+            <li><a href="#devops">DevOps</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article class="article-with-image">
+            <img src="java.png" alt="Java" width="50" height="50">
+            <h2 id="java">Java</h2>
+            <p>Java é uma linguagem multiplataforma, orientada a objetos e centrada em rede que pode ser usada como uma plataforma em si. É uma linguagem de programação rápida, segura e confiável para codificar tudo, desde aplicações móveis e software empresarial até aplicações de big data e tecnologias do servidor.</p>
+        </article>
+        <article class="article-with-image">
+            <img src="spring.png" alt="springboot" width="50" height="50">
+            <h2 id="spring-boot">Spring Boot</h2>
+            <p>Spring Boot é um framework para desenvolvimento de aplicações em Java que se tornou cada vez mais popular nos últimos anos. Ele foi criado para tornar o desenvolvimento mais rápido e fácil, fornecendo uma configuração simplificada e predefinida para muitos dos componentes do ecossistema Spring.</p>
+        </article>
+        <article class="article-with-image">
+            <img src="microservices.png" alt="microsservicos" width="50" height="50">
+            <h2 id="microservicos">Microsserviços</h2>
+            <p>Os microsserviços promovem uma organização de equipes pequenas e independentes que são proprietárias de seus serviços. As equipes atuam dentro de um contexto pequeno e claramente compreendido e têm autonomia para trabalhar de forma mais independente e rápida. O resultado é a aceleração dos ciclos de desenvolvimento.</p>
+        </article>
+        <article class="article-with-image">
+            <img src="devops.png" alt="devops" width="80" height="40">
+            <h2 id="devops">DevOps</h2>
+            <p>DevOps é um conjunto de práticas de integração entre equipes de desenvolvimento de software, operações e segurança, que tem como objetivo gerar valor ao cliente. A principal prática é a adoção de processos automatizados para produção rápida e segura de aplicativos e serviços.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Fatec Sorocaba</p>
+    </footer>
+</body>
 </html>
