@@ -1,0 +1,79 @@
+div {
+    width: 500px;
+    height: 500px;
+}
+
+h2::before {
+    content: "Green";
+}
+
+h2 {
+    color: white;
+    font-family: Georgia;
+    background-color: green;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width:1920px) {
+    h2::before {
+        content: "Yellow";
+    }
+    h2 {
+        font-family: Verdana;
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    h2::before {
+        content: "Purple";
+    }
+    h2 {
+        font-family: 'Segoe UI';
+        background-color: purple;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    h2::before {
+        content: "Light-red";
+    }
+    h2 {
+        font-family: Arial;
+        background-color: rgb(209, 20, 95);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    h2::before {
+        content: "Pink";
+    }
+    h2 {
+        font-family: Helvetica;
+        background-color: rgb(241, 43, 172);
+    }
+}
+
+@media screen and (max-width:768px) {
+    h2::before {
+        content: "Orange";
+    }
+    h2 {
+        font-family: 'Lucida Sans';
+        background-color: orange;
+    }
+}
+
+@media screen and (max-width:420px) {
+    h2::before {
+        content: "Indigo";
+    }
+    h2 {
+        font-family: 'Times New Roman';
+        background-color: Indigo;
+    }
+}
