@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<img id = "img" src="janelafechada.png" onmouseover="openWindow()" onmouseout="closeWindow()" onclick="breakWindow()" widht="300px" height="300px">
+	<h1>Janela fechada</h1>
+	<script>
+		function openWindow(){
+			document.querySelector("#img").setAttribute("src", "janelaaberta.png");
+			document.querySelector("h1").innerText = "Janela aberta";
+		}
+		function closeWindow(){
+			document.querySelector("#img").setAttribute("src", "janelafechada.png");
+			document.querySelector("h1").innerText = "Janela fechada";
+		}
+		function breakWindow(){
+			document.querySelector("#img").setAttribute("src", "janelaquebra.png");
+			document.querySelector("h1").innerText = "Janela quebrada";
+		}
+	</script>
+</body>
+</html>
