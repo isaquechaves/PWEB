@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14</title>
+</head>
+<body>
+    <input type="text" id="input" name="texto" value="">
+    <input type="radio" id="maiusculo" name="check" onclick="maiuscula()">
+    <label for="maiusculo">Maiúsculo</label>
+    <input type="radio" id="minuscula" name="check" onclick="minuscula()">
+    <label for="maiusculo">Minúscula</label>
+
+    <script>
+        const inputId =  document.querySelector("#input");
+        function maiuscula(){
+            inputId.value = inputId.value.toUpperCase();
+        }
+        function minuscula(){
+            inputId.value = inputId.value.toLowerCase();
+        }
+    </script>
+</body>
+</html>
