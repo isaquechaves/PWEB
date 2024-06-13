@@ -13,7 +13,7 @@ module.exports = function(){
      }
   
      this.salvarProfessor = function(professor, connection, callback){
-         connection.query(`INSERT INTO dbo.professores (NOME_PROFESSOR,EMAIL_PROFESSOR) VALUES ('${professor.nome_professor}','${professor.email_professor}')`, callback);
+         connection.query(`INSERT INTO professores (NOME_PROFESSOR,EMAIL_PROFESSOR) VALUES ('${professor.nome_professor}','${professor.email_professor}')`, callback);
      }
   
      this.deletarProfessor = function(professor, connection, callback){
