@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Final</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/atividadefinal.js"></script>
+</head>
+<body>   
+
+    <header>
+        <h1>Gerenciador de Tarefas</h1>
+        <input type="text" id="searchBar" placeholder="Buscar tarefa pelo título">
+    </header>
+    <div class="kanban-board">
+        <div class="kanban-column" id="todo">
+            <h2>Pendente</h2>
+            <button class="add-card-button" id="openModalButton">+ tarefa</button>
+        </div>
+        <div class="kanban-column" id="in-progress">
+            <h2>Em progresso</h2>
+        </div>
+        <div class="kanban-column" id="done">
+            <h2>Concluído</h2>
+        </div>
+    </div>
+
+    <div class="modal" id="addCardModal">
+        <div class="modal-content">
+            <h3>Adicionar nova tarefa</h3>
+            <form id="addCardForm">
+                <input type="text" id="title" placeholder="Título" required>
+                <input type="text" id="description" placeholder="Descrição" required>
+                <input type="text" id="priority" placeholder="Prioridade" required>
+                <input type="text" id="assignedTo" placeholder="Atríbuido" required>
+                <input type="date" id="dueDate" placeholder="Prazo" required>
+                <select id="status">
+                    <option value="todo">Pendente</option>
+                    <option value="in progress">Em progresso</option>
+                    <option value="done">Concluído</option>
+                </select>
+                <button type="submit">Adicionar</button>
+                <button type="button" id="closeModalButton">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © Fatec Sorocaba</p>
+    </footer>
+</body>
+</html>
